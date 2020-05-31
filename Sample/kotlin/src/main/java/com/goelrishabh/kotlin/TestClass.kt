@@ -15,4 +15,13 @@ fun main() {
 
     val initBlock = InitBlock("")
 
+    println()
+    println()
+    println()
+
+    val dataClass = DataClass("Rishabh Goel", 22)
+    println(dataClass) // Prints from .toString()
+    val normalClass = DataClass.NormalClass("Rishabh Goel", 22)
+    print(normalClass) // Prints the object address
+
 }
