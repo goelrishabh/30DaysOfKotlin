@@ -23,6 +23,13 @@ fun main() {
     println(dataClass) // Prints from .toString()
     println(dataClass.component1())
     println(dataClass.component2())
+
+    val cloneOfDataClass = DataClass("", 0)
+    cloneOfDataClass.name = dataClass.name
+    cloneOfDataClass.age = dataClass.age
+    // OR
+    val (name, age) = dataClass // Only works for "Component" aka DATA CLASSES
+
     val normalClass = DataClass.NormalClass("Rishabh Goel", 22)
     print(normalClass) // Prints the object address
 

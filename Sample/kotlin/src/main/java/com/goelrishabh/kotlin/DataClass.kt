@@ -5,7 +5,7 @@ package com.goelrishabh.kotlin
  * @author rishabh-goel on 31-05-2020
  */
 // Automatically Contains toString(), hashCode(), equals()
-data class DataClass(val name: String, val age: Int) {
+data class DataClass(var name: String, var age: Int) {
 
     class NormalClass(name: String, age: Int) {
 
